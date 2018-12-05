@@ -1,17 +1,17 @@
-hello, world of video
+hello, world in go
 go run demo/helloworld/main.go
 
 hello, world of video
 go run demo/hellovideo/main.go 0
 
 face blurring:
-go run ./demo/faceblur/main.go 1 data/haarcascade_frontalface_default.xml
+go run demo/faceblur/main.go 1 data/haarcascade_frontalface_default.xml
 
 style mapping:
-go run -tags openvino ./demo/style-transfer/main.go 0 ~/Downloads/starry_night.t7 openvino fp16
+go run -tags openvino demo/style-transfer/main.go 0 ~/Downloads/starry_night.t7 openvino fp16
 
 dnn face blurring:
-go run -tags openvino ./demo/dnn-faceblur/main.go 0 ~/Downloads/res10_300x300_ssd_iter_140000.caffemodel ~/Downloads/deploy.prototxt openvino cpu
+go run -tags openvino demo/dnn-faceblur/main.go 0 ~/Downloads/res10_300x300_ssd_iter_140000.caffemodel ~/Downloads/deploy.prototxt openvino cpu
 
 dnn background blurring:
-go run -tags openvino ./demo/dnn-backgroundblur/main.go 0 ~/Downloads/res10_300x300_ssd_iter_140000.caffemodel ~/Downloads/deploy.prototxt openvino fp16
+go run -tags openvino demo/dnn-backgroundblur/main.go 0 ~/Downloads/res10_300x300_ssd_iter_140000.caffemodel ~/Downloads/deploy.prototxt openvino fp16
