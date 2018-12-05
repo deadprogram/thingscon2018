@@ -1,0 +1,989 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Computer Vision & IoT</title>
+
+<meta name="description" content="Computer Vision & IoT">
+<meta name="author" content="Ron Evans">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="lib/css/tomorrow.css">
+
+<link rel="stylesheet" href="css/hybrid.css">
+
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+</script>
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	<div class="reveal">
+
+	<!-- Any section element inside of this container is displayed as a slide -->
+	<div class="slides">
+		<section>
+			<section>
+				<h1>Computer Vision & IoT</h1>
+				<h2>Ron Evans - @deadprogram</h2>
+			</section>
+		</section>
+
+		<section>
+			<h2>Ron Evans (@deadprogram)</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/thg-logo.png">
+			</div>
+			<h3>hybridgroup.com</h3>
+		</section>
+	  
+		<section>
+		  <h2>Clients</h2>
+		</section>
+  
+		<section>
+		  <div class="image-container">
+			<img src="images/intel-logo.jpg">
+		  </div>
+		</section>
+  
+		<section>
+		  <div class="image-container">
+			<img src="images/sphero-logo.png">
+		  </div>
+		</section>
+  
+		<section>
+		  <h2>Open Source Projects</h2>
+		</section>
+  
+		<section>
+		  <div class="image-container">
+			<img src="images/gobot-logo.png">
+		  </div>
+		  <h3>gobot.io</h3>
+		</section>
+
+		<section>
+		  <div class="image-container">
+			<img src="images/gocvlogo.jpg">
+		  </div>
+		  <h3>gocv.io</h3>          
+		</section>
+
+		<section>
+			<h2>What is computer vision?</h2>
+	  	</section>
+  
+	  	<section>            
+			<section>
+		  		<h2>Computer vision can...</h2>
+			</section>
+
+			<section>
+		  		<h2>Create privacy-violating surveillance systems</h2>
+			</section>
+
+			<section>
+				<h2>Computer vision can also...</h2>
+		  	</section>
+
+			<section>
+		  		<h2>Telepresence</h2>
+			</section>
+
+			<section>
+				<h2>Autonomous Vehicles</h2>
+			</section>
+
+			<section>
+				<h2>Augmented Humans</h2>
+			</section>
+		</section>
+
+		<section>
+			<h2>Good CV, Bad CV</h2>
+		</section>
+
+		<section>
+			<h2>Responsible IoT</h2>
+		</section>
+
+		<section>
+			<section>
+				<h2>Responsible computer vision systems</h2>
+			</section>
+
+			<section>
+				<h2>Offer visual indicators when cameras are in use</h2>
+			</section>
+
+			<section>
+				<h2>Process data on the edge device</h2>
+			</section>
+
+			<section>
+				<h2>Do not store data they do not have to</h2>
+			</section>
+
+			<section>
+				<h2>When they must store data, make it anonymous</h2>
+			</section>
+
+			<section>
+				<h2>When they must store data, have data retention/deletion policies</h2>
+			</section>
+
+			<section>
+				<h2>What others should there be? Discuss...</h2>
+			</section>
+		</section>
+
+		<section>
+			<section>
+				<h2>Implementing Real-world CV systems</h2>
+			</section>
+
+			<section>
+				<h2>Embedded Linux</h2>
+			</section>
+
+			<section>
+				<h2>Running on small devices</h2>
+			</section>
+
+			<section>
+				<h2>Low-power</h2>
+			</section>
+
+			<section>
+				<h2>High-performance</h2>
+			</section>
+		</section>
+	
+		<section>
+			<section>
+				<h2>Languages for CV</h2>
+			</section>
+
+			<section>
+				<h2>Python</h2>
+			</section>
+
+			<section>
+				<h2>C++</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/Go-Logo_Fuchsia.png">
+				</div>
+				<h3>golang.org</h3>
+			</section>	
+		</section>
+
+		<section>
+			<section>
+				<h2>Go for computer vision</h2>
+			</section>
+
+			<section>
+				<h2>Concurrency</h2>
+			</section>
+
+			<section>
+				<h2>Portability</h2>
+			</section>
+
+			<section>
+				<h2>Performance</h2>
+			</section>
+		</section>
+		
+		<section>
+			<div class="image-container">
+				<img src="images/gocvlogo.jpg">
+			</div>
+			<h3>gocv.io</h3>
+		</section>
+	
+		<section>
+			<div class="image-container">
+				<img src="images/opencv-logo.png">
+			</div>
+			<h3>opencv.org</h3>
+		</section>
+	
+		<section>
+			<div class="image-container">
+				<img src="images/intel-logo.jpg">
+			</div>
+			<h3>Intel OpenVINO</h3>
+		</section>
+	
+		<section>          
+			<section>
+				<h2>How OpenCV Works</h2>
+			</section>
+
+			<section>
+				<h2>Written in C++</h2>
+			</section>
+	
+			<section>
+				<div class="image-container">
+					<img src="images/opencv-arch-2.png">
+				</div>
+				<p>OpenCV architecture</p>
+			</section>	
+
+			<section>
+				<h2>OpenCV Core</h2>
+			</section>
+
+			<section>
+				<h2>OpenCV Core modules</h2>
+			</section>
+	
+			<section>
+				<h2>OpenCV contrib</h2>
+			</section>				
+		</section>
+
+		<section>          
+			<section>
+				<h2>How GoCV Works</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/gocv-arch.png">
+				</div>
+				<p>GoCV architecture</p>
+			</section>
+		
+			<section>
+				<h2>Go &rarr; C &rarr; C++</h2>
+			</section>
+	
+			<section>
+				<h2>Linux</h2>
+			</section>
+
+			<section>
+				<h2>mac os</h2>
+			</section>
+
+			<section>
+				<h2>Windows</h2>
+			</section>
+
+			<section>
+				<h2>Yes, I said Windows</h2>
+			</section>
+		</section>
+
+		<section>
+			<h2>Activity</h2>
+			<h3>“Hello World” in Go</h3>
+		</section>
+
+		<section>
+			<h2>How to run Go code</h2>
+			<pre><code class="shell">
+go run main.go
+			</code></pre>
+		</section>
+
+		<section>
+            <pre><code class="golang">
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println("Hello, world")
+}				
+            </code></pre>
+          </section>
+
+		<section>
+			<h2>Activity</h2>
+			<h3>“Hello World” of computer vision</h3>
+		</section>
+
+		<section>
+			<h3>The “Hello World” of computer vision</h3>
+			<p><a target="_blank" href="https://github.com/hybridgroup/gocv/blob/master/cmd/hello/main.go">cmd/hello/main.go</a></p>
+		</section>
+
+		<section>
+            <pre><code class="golang">
+package main
+
+import (
+	"gocv.io/x/gocv"
+)
+
+func main() {
+	webcam, _ := gocv.VideoCaptureDevice(0)
+	window := gocv.NewWindow("Hello")
+	img := gocv.NewMat()
+
+	for {
+		webcam.Read(&img)
+		window.IMShow(img)
+		gocv.WaitKey(1)
+	}
+}				
+            </code></pre>
+          </section>
+
+        <section>
+			<section>
+				<h2>Into The Mat(rix)</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/matrix.svg">
+				</div>
+				<p>Matrix (mathematics)</p>
+			</section>
+	
+			<section>
+				<h2>Mat is the fundamental data type<br>in OpenCV</h2>
+			</section>
+		
+			<section>
+				<div class="image-container">
+					<img src="images/mat-base.jpg">
+				</div>
+				<h3>Empty Mat</h3>
+			</section>
+
+			<section>
+				<h2>A Mat has a specific type</h2>
+			</section>
+
+			<section>
+				<h2>All elements of a Mat have the same type</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/mat-2d1c.jpg">
+				</div>
+				<h3>Black and white image</h3>				
+				<h3>Mat (2 dimensions, 8-bit integer)</h3>
+			</section>
+					
+			<section>
+				<div class="image-container">
+					<img src="images/mat-2d1c-16bit.jpg">
+				</div>
+				<h3>Grayscale image</h3>				
+				<h3>Mat (2 dimensions, 16-bit integer)</h3>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/mat-2d1c-float.jpg">
+				</div>
+				<h3>2-d vector</h3>				
+				<h3>Mat (2 dimensions, floating point)</h3>
+			</section>
+
+			<section>
+				<h2>A Mat also has a specific number of channels</h2>
+			</section>
+	
+			<section>
+				<h2>All elements of a Mat have the same number of channels</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/mat-2d1c-16bit.jpg">
+				</div>
+				<h3>Grayscale image</h3>				
+				<h3>Mat (2 dimensions, 16-bit integer, 1 channel)</h3>
+			</section>
+	
+			<section>
+				<div class="image-container">
+					<img src="images/mat-2d3c.jpg">
+				</div>
+				<h3>RGB Color image</h3>
+				<h3>Mat (2 dimensions, 16-bit integer, 3 channels)</h3>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/mat-2d3c-array.jpg">
+				</div>
+				<h3>BGR Color image as array</h3>				
+				<h3>Mat (2 dimensions, 16-bit integer, 3 channels)</h3>
+			</section>
+					
+			<section>
+				<div class="image-container">
+					<img src="images/mat-3d2c-float.jpg">
+				</div>
+				<h3>3-d vector</h3>
+				<h3>Mat (3 dimensions, 2 channels, floating point)</h3>
+			</section>    
+		</section>
+<!-- part 2 -->
+
+		<section>
+			<h2>Image Processing and Filters</h2>
+		</section>
+
+		<section>
+			<h2>What Are Image Filters?</h2>
+		</section>
+
+		<section>
+			<h2>Introducing CVScope</h2>
+			<p><a target="_blank" href="https://github.com/hybridgroup/cvscope">https://github.com/hybridgroup/cvscope</a></p>
+		</section>
+
+		<section>		
+			<section>
+				<h2>Dilate</h2>
+			</section>	
+
+			<section>
+				<div class="image-container">
+					<img src="images/dilate.png">
+				</div>
+				<h3>How dilate works</h3>
+			</section>
+
+			<section>
+				<h2>Activity</h2>
+				<h3>Try Dilate with CVScope</h3>
+			</section>
+
+			<section>
+				<h2>Try Dilate with CVScope</h2>
+				<pre><code class="shell">
+cvscope dilate
+				</code></pre>
+			</section>
+			
+			<section>
+				<pre><code class="golang">
+kernel := gocv.GetStructuringElement(gocv.MorphRect, image.Pt(12, 12))
+gocv.Dilate(src, &dest, kernel)			
+				</code></pre>
+			</section>			
+		</section>
+
+		<section>		
+			<section>
+				<h2>Erode</h2>
+			</section>	
+
+			<section>
+				<div class="image-container">
+					<img src="images/erode.png">
+				</div>
+				<h3>How erode works</h3>
+			</section>
+
+			<section>
+				<h2>Activity</h2>
+				<h3>Try Erode with CVScope</h3>
+			</section>
+
+			<section>
+				<h2>Try erode with CVScope</h2>
+				<pre><code class="shell">
+cvscope erode
+				</code></pre>
+			</section>
+
+			<section>
+				<pre><code class="golang">
+kernel := gocv.GetStructuringElement(gocv.MorphRect, image.Pt(12, 12))
+gocv.Erode(src, &dest, kernel)
+				</code></pre>
+			</section>	
+		</section>
+		
+		<section>		
+			<section>
+				<h2>Gaussian Blur</h2>
+			</section>	
+
+			<section>
+				<div class="image-container">
+					<img src="images/gaussian-filter.png">
+				</div>
+				<h3>Gaussian curve</h3>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/gaussian-before.jpg">
+					<img src="images/gaussian-after.jpg">
+				</div>
+				<h3>How Gaussian blur works</h3>
+			</section>
+
+			<section>
+				<h2>Activity</h2>
+				<h3>Try Gaussian Blur with CVScope</h3>
+			</section>
+
+			<section>
+				<h2>Try Gaussian Blur with CVScope</h2>
+				<pre><code class="shell">
+cvscope gaussian
+				</code></pre>
+			</section>		
+
+			<section>
+				<pre><code class="golang">
+gocv.GaussianBlur(src, &dest, image.Pt(0, 0), 30, 0, gocv.BorderConstant)
+				</code></pre>
+			</section>	
+		</section>
+
+<!-- part 3 -->
+		<section>
+			<h2>Applying CV</h2>
+		</section>  
+
+		<section>
+			<section>
+				<h2>Streaming video</h2>
+			</section>
+
+			<section>
+				<h2>MJPEG</h2>
+			</section>
+
+			<section>
+				<h2>Activity</h2>
+				<h3>Video streaming</h3>
+			</section>
+
+			<section>
+				<h2>Video streaming code</h2>
+				<p><a target="_blank" href="https://github.com/hybridgroup/gocv/blob/master/cmd/mjpeg-streaming/main.go">cmd/mjpeg-streaming/main.go</a></p>
+			</section>			
+		</section>
+
+		<section>
+			<section>
+				<h2>Unprotected video camera on the Internet?</h2>
+			</section>
+
+			<section>
+				<h2>Twelve-factor app</h2>
+				<h3>12factor.net</h3>
+			</section>
+	
+			<section>
+				<h2>Streaming video with authentication</h2>
+			</section>
+
+			<section>
+				<h2>Activity</h2>
+				<h3>Video streaming with basic auth</h3>
+			</section>
+
+			<section>
+				<h2>Video streaming with basic auth code</h2>
+				<p><a target="_blank" href="https://github.com/hybridgroup/gocv/blob/master/cmd/mjpeg-streaming-auth/main.go">cmd/mjpeg-streaming-auth/main.go</a></p>
+			</section>			
+		</section>
+
+		<section>
+			<section>
+				<h2>Face tracking</h2>
+			</section>
+
+			<section>
+				<h2>Face <del>tracking</del></h2>
+			</section>
+
+			<section>
+				<h2>Face blurring</h2>
+			</section>
+
+			<section>
+				<h2>Cascade classifier</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+				<img src="images/haar-wavelet.png">
+				</div>
+				<h3>haar wavelet</h3>
+			</section>
+
+			<section>
+				<h2>Viola–Jones object detection</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+				<img src="images/cascade-example.png">
+				</div>
+				<h3>haar features</h3>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/cascade-example-eyes.jpg">
+				</div>
+				<h3>haar feature applied to eyes</h3>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/cascade-example-nose.jpg">
+				</div>
+				<h3>haar feature applied to nose</h3>
+			</section>
+
+			<section>
+				<h2>2-feature classifier can eliminate negative matches</h2>
+			</section>
+
+			<section>
+				<h2>or else cascade to next layer of classifier to analyze using more features</h2>
+			</section>
+				
+			<section>
+				<pre><code class="golang">
+gocv.CascadeClassifier{}
+				</code></pre>
+			</section>
+
+			<section>
+				<h2>Activity</h2>
+				<h3>Face blurring with cascade classifier</h3>
+			</section>
+
+			<section>
+				<h2>Face blur code</h2>
+				<p><a target="_blank" href="https://github.com/hybridgroup/gocv/blob/master/cmd/faceblur/main.go">cmd/faceblur/main.go</a></p>
+			</section>			
+		</section>			
+
+
+<!-- part 4 -->
+
+		<section>
+			<h2>CV using Deep Neural Networks</h2>
+		</section>
+
+		<section>
+			<h2>What is a Deep Neural Network (DNN)?</h2>
+		</section>		
+
+		<section>
+			<div class="image-container">
+				<img src="images/dnn-fnn.png">
+			</div>
+			<h3>Feed-forward Neural Network</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/dnn-rnn.png">
+			</div>
+			<h3>Recurrent Neural Network</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/dnn.png">
+			</div>
+			<h3>Multi-layer Neural Network</h3>
+		</section>
+			
+		<section>
+			<div class="image-container">
+				<img src="images/really-deep-dnn.png">
+			</div>
+			<h3>Deep Neural Network</h3>
+		</section>
+
+		<section>
+			<section>
+				<h2>DNN frameworks</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/caffe-logo.png">
+				</div>
+				<h3>Caffe</h3>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/tensorflow-logo.png">
+				</div>
+				<h3>Tensorflow</h3>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/torch-logo.png">
+				</div>
+				<h3>Torch</h3>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/darknet-logo.png">
+				</div>
+				<h3>Darknet</h3>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/intel-logo.jpg">
+				</div>
+				<h3>OpenVINO Model Optimizer IR</h3>
+			</section>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/cv-dnn-workflow.png">
+			</div>
+			<h3>CV with DNN workflow</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gocv-opencv-dnn-arch.png">
+			</div>
+			<h3>GoCV + DNN architecture</h3>
+		</section>
+
+		<section>
+			<section>
+				<h2>Style transfer using a Deep Neural Network</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/starry-night.jpg">
+				</div>
+				<h3>"Starry Night" - Van Gogh</h3>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/chicago.jpg">
+				</div>
+				<h3>Chicago</h3>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/chicago-starry-night.jpg">
+				</div>
+				<h3>Chicago Starry Night</h3>
+			</section>
+
+			<section>
+				<h2>"Perceptual Losses for Real-Time Style Transfer and Super-Resolution"</h2>
+				<h3>Justin Johnson, Alexandre Alahi, Li Fei-Fei</h3>
+			</section>                    
+
+			<section>
+				<pre><code class="golang">
+gocv.ReadNet{}
+				</code></pre>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/torch-logo.png">
+				</div>
+				<h3>Torch</h3>
+			</section>
+
+			<section>
+				<h2>Activity</h2>
+				<h3>Style transfer using a Deep Neural Network</h3>
+			</section>
+
+			<section>
+				<h2>Style transfer code</h2>
+				<p><a target="_blank" href="https://github.com/hybridgroup/gocv/blob/master/cmd/dnn-style-transfer/main.go">cmd/dnn-style-transfer/main.go</a></p>
+			</section>
+		</section>
+
+		<section>
+			<section>
+				<h2>Face blurring using DNNs</h2>
+			</section>
+
+			<section>
+				<div class="image-container">
+					<img src="images/caffe-logo.png">
+				</div>
+				<h3>Caffe</h3>
+			</section>
+				
+			<section>
+				<h2>OpenCV face tracking SSD model</h2>
+			</section>                    
+
+			<section>
+				<div class="image-container">
+					<img src="images/dnn-ssd.png">
+				</div>
+				<h3>Single-shot Multibox Detector (SSD)</h3>
+			</section>
+
+			<section>
+				<h2>Activity</h2>
+				<h3>Face blurring using DNNs</h3>
+			</section>
+
+			<section>
+				<h2>Face blurring DNN code</h2>
+				<p><a target="_blank" href="https://github.com/hybridgroup/gocv/blob/master/cmd/dnn-faceblur/main.go">cmd/dnn-faceblur/main.go</a></p>
+			</section>
+
+			<section>
+				<h2>Extra credit activity:</h2>
+				<h3>Background blurring using DNNs</h3>
+			</section>
+
+			<section>
+				<h2>Background blurring DNN code</h2>
+				<p><a target="_blank" href="https://github.com/hybridgroup/gocv/blob/master/cmd/dnn-backgroundblur/main.go">cmd/dnn-backgroundblu/main.go</a></p>
+			</section>
+		</section>
+
+        <section>
+            <h2>One last thought...</h2>
+        </section>
+
+        <section>
+            <h2>
+                <blockquote>
+                    Humanity is acquiring all the right technology for all the wrong reasons.
+                </blockquote>
+                <figcaption>R. Buckminster "Bucky" Fuller</figcaption>
+            </h2>
+        </section>
+
+        <section>
+            <div class="image-container">
+                <img src="images/utopia-or-oblivion.jpg">
+            </div>
+        </section>
+
+        <section>
+            <div class="image-container">
+                <img src="images/abandoned-spacecraft.jpg">
+            </div>
+            <p>"Abandoned Buran shuttle" - Ralph Mirebs</p>
+            <p>https://ralphmirebs.livejournal.com/219949.html</p>
+        </section>
+
+        <section>
+            <div class="image-container">
+                <img src="images/panopticon.jpg">
+            </div>
+            <p>"Stateville Correctional Center" - Doug DuBois & Jim Goldberg</p>
+            <p>http://www.dougdubois.com/</p>
+            <p>http://www.magnumphotos.com/jimgoldberg</p>
+        </section>
+    
+        <section>
+            <div class="image-container">
+                <img src="images/altitude.jpg">
+            </div>
+            <p>"Altitude determines attitude" - Robert Pruitt</p>
+            <p>http://robertpruittartist.tumblr.com</p>          
+        </section>
+
+        <section>
+			<h2>Questions?</h2>
+		</section>	
+	
+		<section>
+			<h1>Thank you!</h1>
+			<h2>@deadprogram</h2>
+		</section>	
+	  </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+	<script src="js/hybrid.js"></script>
+
+	<script>
+
+	  // Full list of configuration options available here:
+	  // https://github.com/hakimel/reveal.js#configuration
+	  Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		leap: {
+		  naturalSwipe   : true,    // Invert swipe gestures
+		  pointerOpacity : 0.5,      // Set pointer opacity to 0.5
+		  pointerColor   : '#d80000' // Red pointer
+		},
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+		  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+		  { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+		  { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+		  { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+		  { src: 'plugin/leap/leap.js', async: true }
+		]
+	  });
+
+	</script>
+
+  </body>
+</html>

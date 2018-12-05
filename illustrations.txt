@@ -1,0 +1,21 @@
+Illustrations used in content
+
+CC BY-SA 3.0, https://en.wikipedia.org/wiki/Matrix_(mathematics)
+CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Dilation.png
+CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Erosion.png
+CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Cappadocia_Gaussian_Blur.svg
+CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Cappadocia_Gaussian_Blur.svg
+CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Haar_wavelet.svg
+Public domain, https://commons.wikimedia.org/wiki/File:Prm_VJ_fig1_featureTypesWithAlpha.png
+CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=84811
+CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Running_gaussian.jpg
+CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:SingleLayerNeuralNetwork_english.png
+CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:RecurrentLayerNeuralNetwork_english.png
+CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=1496812
+CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Neural_network_bottleneck_achitecture.svg
+CC BY-SA 3.0, https://commons.wikimedia.org/wiki/Neural_network
+
+http://joelouismarino.github.io/images/blog_images/blog_googlenet_keras/googlenet_diagram.png
+https://arxiv.org/abs/1409.4842
+https://towardsdatascience.com/learning-note-single-shot-multibox-detector-with-pytorch-part-1-38185e84bd79
+
