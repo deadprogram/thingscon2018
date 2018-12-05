@@ -1,5 +1,7 @@
-# Computer Vision Using Go and OpenCV 3
+# Computer Vision and IoT
 
-## Talk given at GothamGo 2018
+## Workshop given at ThingsCon 2018
 
-Copyright 2018 Ron Evans. Licensed under Apache 2.0 license.
+Copyright 2018 Ron Evans.
+
+Other included content copyright of their respective holders.
